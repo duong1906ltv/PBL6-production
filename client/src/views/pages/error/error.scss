@@ -1,0 +1,25 @@
+.error-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    img{
+        width: 680px;
+    }
+    h1,h4{
+        color: #555;
+    }
+    .button{
+        background-color: #634efd;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 25px;
+        border: none;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+    .button:hover{
+        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+    }
+}

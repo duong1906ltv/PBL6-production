@@ -1,0 +1,25 @@
+.friend-container{
+    margin: 0 auto;
+    margin-top: 10px;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        
+        div{
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 10px 10px 0 0;
+            border-bottom: 2px solid #dbdbdb;
+            font-weight: 500;
+        }
+    }
+    &__content{
+        margin-top: 10px;
+        padding-bottom: 70px;
+    }
+}
+.tab-active{
+    border-bottom: none !important;
+    background-color: #0f83bd;
+    color: #fff;
+}

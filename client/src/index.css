@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,500;1,600;1,800&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+}
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.ant-input-affix-wrapper-focused {
+    box-shadow: none !important;
+}
+.img-circle{
+  border-radius: 50%;
+}
+.shape-circle{
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+}
+span{
+  font-size: 14px;
+  color: #65676b;
+}
+.txt-blue{
+  color: #0b628e
+}
+p{
+  margin-bottom: 0 !important;
+}
+a{
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline !important;
+}
+.user-name{
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.user-name:hover{
+  color: black;
+  text-decoration: underline;
+}
+.line{
+  height: 1px;
+  width: 30px;
+  background-color: #65676b;
+}
+.btn:hover{
+  background-color: #dbdbdb;
+}
+.btn-blue{
+  background-color: #0f83bd !important;
+  color: #fff !important;
+  outline: none;
+}
+.btn-blue:hover{
+  background-color: #0b628e !important;
+}
+
+.btn-gray{
+  background-color: #f0f2f5 !important;
+  color: #000 !important;
+  outline: none;
+}
+.btn-gray:hover{
+  background-color: #dbdbdb !important;
+}

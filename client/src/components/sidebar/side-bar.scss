@@ -1,0 +1,39 @@
+.side-bar-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    .item{
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 20px;
+        color: #65676b;
+        border-radius: 5px;
+        p{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .icon{
+            font-size: 20px !important;
+        }
+        
+    }
+    .item:hover{
+        background-color: #e7f6fd;
+        color: #38b3ef;
+        span{
+            color: #38b3ef;
+        }
+    }
+}
+.ant-layout-sider-trigger {
+    background: #d0edfb;
+    span{
+        color: #000;
+    }
+}

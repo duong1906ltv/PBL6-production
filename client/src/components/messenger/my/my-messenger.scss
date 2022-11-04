@@ -1,0 +1,19 @@
+.my-messages-content{
+    width: 100%;
+    min-height: 40px;
+    position: relative;
+    margin: 4px 0;
+    display: table;
+    .messange {
+        height: fit-content;
+        max-width: 50%;
+        margin: auto 0;
+        padding: 10px 15px;
+        border-radius: 30px;
+        background-color: #efefef;
+        font-size: 14px;
+        position: absolute;
+        right: 20px;
+        display: table-cell;
+    }
+}

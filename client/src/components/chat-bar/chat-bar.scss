@@ -1,0 +1,33 @@
+.chat-bar-content {
+    height: 70px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .avatar {
+        display: flex;
+        padding: 0;
+        img {
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        padding: 14px 5px;
+        div {
+            max-width: 250px;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div:nth-child(2) {
+            color: #808080;
+            font-size: 13px;
+        }
+    }
+}
+.chat-bar-content:hover {
+    background-color: #fafafa;
+}

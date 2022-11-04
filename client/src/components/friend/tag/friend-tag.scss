@@ -1,0 +1,27 @@
+.friend-tag{
+    display: flex;
+    width: 300px;
+    gap: 15px;
+    align-items: center;
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    span{
+        font-weight: 600;
+    }
+    .point-blue{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #38b3ef;
+        margin-left: auto;
+    }
+}
+.friend-tag:hover{
+    background-color: #e7f6fd;
+}

@@ -1,0 +1,41 @@
+.comment-container {
+  display: flex;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  &__text {
+    min-height: 40px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    position: relative;
+  }
+  &__reply-action {
+    display: flex;
+    gap: 15px;
+    a {
+      font-size: 12px;
+      font-weight: 600;
+      color: #65676b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    label {
+      font-size: 12px;
+      color: #65676b;
+    }
+  }
+  &__reply {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}

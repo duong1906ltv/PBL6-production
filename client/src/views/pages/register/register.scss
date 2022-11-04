@@ -1,0 +1,123 @@
+.register-container {
+    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-036.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 500px;
+        margin-left: 80px;
+    }
+    &__content {
+        width: 1200px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.3);
+
+        h1 {
+            color: #38b3ef;
+        }
+        &__item {
+            padding: 4px 10px;
+            margin: 15px 0;
+            border-bottom: 1px solid #dbdbdb;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .ant-form-item {
+                width: 100%;
+                margin: 0;
+            }
+            .input {
+                padding-left: 20px;
+                border: none;
+                background-color: transparent;
+                color: #757575;
+            }
+            .input:focus,
+            input:focus {
+                outline: none;
+            }
+            input {
+                width: 85%;
+                border: none;
+                background-color: transparent;
+            }
+            .ant-form-item-explain-error {
+                position: absolute;
+                top: 120%;
+                left: 20px;
+                color: red;
+            }
+        }
+        .active {
+            border-bottom: 2px solid #38b3ef;
+            .icon {
+                color: #38b3ef;
+                font-weight: 600;
+            }
+        }
+    }
+    .blue {
+        color: #38b3ef;
+    }
+    label {
+        cursor: pointer;
+        color: #757575;
+        font-size: 14px;
+        margin-left: auto;
+    }
+    a:hover,
+    label:hover {
+        color: #38b3ef;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #757575;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+    }
+    .btn-submit {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: #38b3ef;
+        transition: all 0.5s ease;
+        height: fit-content;
+        span {
+            color: #fff;
+        }
+    }
+
+    .btn-submit:hover {
+        box-shadow: 0 0 15px rgba($color: #0b628e, $alpha: 0.5);
+        span {
+            color: #fff !important;
+        }
+    }
+}
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    box-shadow: none !important;
+}
+.ant-input{
+    width: 100% !important;
+}
+.ant-input:focus, .ant-input:not(:hover){
+    box-shadow: none !important;
+}
+.ant-input:not(:hover){
+    box-shadow: none !important;
+}
