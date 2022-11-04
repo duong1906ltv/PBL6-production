@@ -11,13 +11,14 @@ function Chat() {
 	const [messages, setMessages] = useState([]);
 	const [newMessage, setNewMessage] = useState("");
 	const [arrivalMessage, setArrivalMessage] = useState(null);
-	const socket = useRef(io("ws://localhost:9000"));
+	const ENDPOINT = "https://kuruku.onrender.com/";
+	const socket = useRef(io(ENDPOINT));
 	const { user, getMyConversation, listConversations } = useAppContext();
 	const scrollRef = useRef();
 
 	useEffect(() => {
 		getMyConversation();
-		socket.current = io("ws://localhost:9000");
+		socket.current = io(ENDPOINT);
 		socket.current.on("getMessage", (data) => {
 			setArrivalMessage({
 				sender: data.senderId,
@@ -31,7 +32,6 @@ function Chat() {
 		arrivalMessage &&
 			currentChat?.members.includes(arrivalMessage.sender) &&
 			setMessages((prev) => [...prev, arrivalMessage]);
-		console.log("ALO");
 	}, [arrivalMessage, currentChat]);
 
 	useEffect(() => {
@@ -116,8 +116,8 @@ function Chat() {
 								(x) => x !== user._id
 							)}
 							handleSubmit={handleSubmit}
-							setNewMessage = {setNewMessage}
-							newMessage = {newMessage}
+							setNewMessage={setNewMessage}
+							newMessage={newMessage}
 						/>
 					) : (
 						<div className="text-center m-auto">

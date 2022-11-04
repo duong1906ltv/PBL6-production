@@ -25,7 +25,6 @@ const getMessage = async (req, res) => {
 
 const getLastMessage = async (req, res) => {
 	const { conversationId, userId } = req.query;
-	console.log(conversationId);
 	try {
 		const message = await Message.findOne({
 			conversationId: conversationId,
